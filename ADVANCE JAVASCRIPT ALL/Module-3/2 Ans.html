@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Q-2 </title>
+</head>
+<body>
+
+    <div class="that-class"> Jainish </div>
+    <div class="that-class"> Mukesh </div>
+    <div class="that-class"> Shivam </div>
+    <div class="that-class"> Deepak </div>
+    <div class="that-class"> Sachin </div>
+    <button id="ent"> Click Me </button>
+
+    <script>
+
+        // Get all Elements with Class "that-class"
+        var elements = document.querySelectorAll(".that-class");
+
+        // Attach a Click Event listener to the Button
+        document.getElementById("ent").addEventListener("click", () => {
+            // Loop through each Element with Class "my-class" and Show an Alert
+            elements.forEach((element, index) => {
+                alert(`Clicked on Element ${index + 1} : ${element.textContent}`);
+            })
+        })
+
+    </script>
+    
+</body>
+</html>
